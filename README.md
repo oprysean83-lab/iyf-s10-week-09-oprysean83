@@ -1,4 +1,3 @@
-# iyf-s10-week-09-Kimiti4
 # Week 9: React Advanced – Effects, Routing & API Integration
 
 ## Author
