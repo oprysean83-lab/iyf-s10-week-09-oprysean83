@@ -1,0 +1,132 @@
+/* 🔹 Task 18.2: CSS Module for Button Component */
+
+/* Base button styles */
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+/* Variant: Primary */
+.primary {
+  background-color: #3b82f6;
+  color: white;
+}
+.primary:hover:not(:disabled) {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+.primary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Variant: Secondary */
+.secondary {
+  background-color: #64748b;
+  color: white;
+}
+.secondary:hover:not(:disabled) {
+  background-color: #475569;
+  transform: translateY(-1px);
+}
+
+/* Variant: Outline */
+.outline {
+  background-color: transparent;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+}
+.outline:hover:not(:disabled) {
+  background-color: #eff6ff;
+  transform: translateY(-1px);
+}
+
+/* Variant: Danger */
+.danger {
+  background-color: #ef4444;
+  color: white;
+}
+.danger:hover:not(:disabled) {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+}
+
+/* Variant: Ghost */
+.ghost {
+  background-color: transparent;
+  color: #475569;
+}
+.ghost:hover:not(:disabled) {
+  background-color: #f1f5f9;
+}
+
+/* Size: Small */
+.small {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+/* Size: Medium */
+.medium {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+/* Size: Large */
+.large {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+
+/* Full width */
+.fullWidth {
+  width: 100%;
+}
+
+/* Disabled state */
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Loading state */
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Focus visible for accessibility */
+.button:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Icon support */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
