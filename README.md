@@ -67,18 +67,4 @@ An advanced React application that transforms CommunityHub into a multi-page, AP
 - Modal toggle with `useToggle`
 - Responsive design with mobile-first CSS
 
-## How to Run
-### Option 1: Development Mode
-```bash
-# 1. Clone the repository
-git clone https://github.com/Kimiti4/iyf-s10-week-09-Kimiti4.git
-cd iyf-s10-week-09-Kimiti4
 
-# 2. Install dependencies
-npm install
-
-# 3. Start the dev server
-npm run dev
-
-# 4. Open in browser
-# → Visit http://localhost:5173
