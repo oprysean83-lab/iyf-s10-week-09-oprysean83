@@ -2,8 +2,7 @@
 # Week 9: React Advanced – Effects, Routing & API Integration
 
 ## Author
-- **Name:** Amos Kimiti
-- **GitHub:** [@Kimiti4](https://github.com/Kimiti4)
+- **Name:** Dennis kibathi
 - **Date:** April 21, 2026
 
 ## Project Description
